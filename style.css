@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Mulish:wght@400;500&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif; */
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Mulish', sans-serif;
+}
+.font-Montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-black{
+    background-color: #141516;
+}
+.bg-blue{
+    background-color: #006AFF;
+}
+.text-blue{
+    color: #006AFF;
+}
+.btn-primary{
+    width: 10.313rem;
+    height: 2.875rem;
+    border-radius: 2.313rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+.donate-btn:hover{
+    box-shadow: -9px 13px 6px rgba(172, 172, 172, 0.15);
+}
+
+.slider{
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track{
+    /* border: 2px solid #006AFF; */
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-350px * 4));
+
+    }
+}
+.slide{
+    height: auto;
+    width: 350px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+@media (max-width:500px) {
+    .slide{
+        width: 200px;
+    }
+}
+.slide img{
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.slide img:hover{
+    transform: scale(1.13);
+}
+/* slider2 */
+.slider2{
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slide-track2{
+    /* border: 2px solid #006AFF; */
+    display: flex;
+    animation: scroll2 40s linear infinite;
+}
+@keyframes scroll2{
+    0%{
+        transform: translateX(calc(-350px * 5));
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+.slide2{
+    height: auto;
+    width: 350px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+@media (max-width:500px) {
+    .slide2{
+        width: 200px;
+    }
+}
+.slide2 img{
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.slide2 img:hover{
+    transform: scale(1.13);
+}
+
+
